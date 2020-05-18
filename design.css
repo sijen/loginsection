@@ -1,0 +1,85 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+}
+body::before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width:100%;
+    background-image: url("images.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(3px);
+}
+.forumbody{    
+    margin-top:100px ;
+    padding:40px;
+    position:relative;
+    width:350px;
+    background-color: rgba(0,0,0, 0.4);
+    border-top-left-radius: 10%;
+}
+.forumbody>img{
+    position: absolute;
+    height: 100px;
+    width:100px;
+    border-radius: 50%;
+    top:-70px;
+    box-shadow: 1px 1px 5px rgb(182, 181, 181);
+    left:173px;
+}
+.forumbody>input{
+    margin-top: 30px;
+    outline: none;
+    padding: 20px;
+    border:none;
+    color: rgb(117, 117, 116);
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+.forumbody::before{
+    content: " ";
+    position: absolute;
+    border-radius: 50%;
+    top:10px;
+    right:10px;
+    height:30px;
+    width:30px;
+    background-color: transparent;
+    box-shadow:1px 1px 2px antiquewhite;
+    z-index: 2 ;
+}
+.forumbody>input:focus{
+    box-shadow: 0px 5px 0px rgb(91, 91, 212);
+}
+.forumbody>.forgot{
+    margin-top: 20px;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.forumbody>.forgot>a{
+    color:red;
+}
+.forumbody>button{
+    margin-top: 20px;
+    padding: 10px 80px;
+    background-color: transparent;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+    color:white;
+    transition: box-shadow 0.3s ease;
+}
+.forumbody>button:hover{
+    box-shadow:0px 0px 2px antiquewhite;
+}
